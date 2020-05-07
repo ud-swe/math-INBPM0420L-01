@@ -103,8 +103,11 @@ class FractionTest {
 
     @Test
     public void testReduce() {
-        // TODO (E8X6WL)
-        fail();
+        assertFraction(2,3,new Fraction(4,6).reduce());
+        assertFraction(6,7,new Fraction(30,35).reduce());
+        assertFraction(1,2,new Fraction(1,2).reduce());
+        assertFraction(3,7,new Fraction(12,28).reduce());
+        assertFraction(1,5,new Fraction(2,10).reduce());
     }
 
     @Test
