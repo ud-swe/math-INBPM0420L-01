@@ -102,8 +102,7 @@ public class Fraction extends Number implements Cloneable {
      * @return a fraction that represents the result
      */
     public Fraction multiply(int n) {
-        // TODO (Z79CCJ)
-        return null;
+        return new Fraction(numerator * n, denominator * n);
     }
 
     /**
