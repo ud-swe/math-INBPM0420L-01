@@ -251,8 +251,8 @@ public class Fraction extends Number implements Cloneable {
      * @return the result of the reduction of this fraction
      */
     public Fraction reduce() {
-        // TODO (E8X6WL)
-        return null;
+        int gcd = math.GCD.gcd(numerator,denominator);
+        return new Fraction(numerator / gcd, denominator / gcd);
     }
 
     /**
