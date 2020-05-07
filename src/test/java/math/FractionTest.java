@@ -43,11 +43,11 @@ class FractionTest {
 
     @Test
     public void testMultiplyInt() {
-        assertFraction(12, 16, new Fraction(6, 8).multiply(2));
-        assertFraction(12, 6, new Fraction(4, 2).multiply(3));
-        assertFraction(12, 28, new Fraction(3, 7).multiply(4));
-        assertFraction(45, 65, new Fraction(9, 13).multiply(5));
-        assertFraction(24, 30, new Fraction(4, 5).multiply(6));
+        assertFraction(12, 8, new Fraction(6, 8).multiply(2));
+        assertFraction(12, 2, new Fraction(4, 2).multiply(3));
+        assertFraction(12, 7, new Fraction(3, 7).multiply(4));
+        assertFraction(45, 13, new Fraction(9, 13).multiply(5));
+        assertFraction(24, 5, new Fraction(4, 5).multiply(6));
     }
 
     @Test
