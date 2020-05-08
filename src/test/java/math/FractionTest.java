@@ -112,8 +112,12 @@ class FractionTest {
 
     @Test
     public void testToString() {
-        // TODO (AW4Q0K)
-        fail();
+        assertEquals("0",new Fraction(0,2).toString());
+        assertEquals("0",new Fraction(0,13).toString());
+        assertEquals("12",new Fraction(12,1).toString());
+        assertEquals("42",new Fraction(42,1).toString());
+        assertEquals("42/12",new Fraction(42,12).toString());
+        assertEquals("11/23",new Fraction(11,23).toString());
     }
 
     @Test
