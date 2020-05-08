@@ -303,8 +303,16 @@ public class Fraction extends Number implements Cloneable {
      */
     @Override
     public String toString() {
-        // TODO (AW4Q0K)
-        return null;
+
+        if (numerator == 0) {
+            return "0";
+        }
+        if (denominator == 1) {
+            return Integer.toString(numerator);
+        }
+        else {
+            return numerator + "/" + denominator;
+        }
     }
 
 }
