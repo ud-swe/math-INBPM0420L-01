@@ -65,7 +65,28 @@ class FractionTest {
     @Test
     public void testAddFraction() {
         // TODO (XU4JAD)
-        fail();
+        Fraction a = new Fraction(1,3);
+        Fraction b = new Fraction(3,7);
+        assertFraction(16,21,a.add(b));
+
+        a = new Fraction(0,6);
+        b = new Fraction(2,13);
+        assertFraction(2,13, a.add(b));
+
+        a = new Fraction(10,20);
+        b = new Fraction(11,20);
+        assertFraction(21,20, a.add(b));
+
+        a = new Fraction(1,2);
+        //b = a.clone();  :(
+        b = new Fraction(1,2);
+        assertFraction(2,2,a.add(b));
+
+        a = new Fraction(2,-5);
+        b = new Fraction(6,3);
+        assertFraction(24,15,a.add(b));
+
+
     }
 
     @Test
