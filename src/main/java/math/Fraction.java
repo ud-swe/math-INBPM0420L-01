@@ -124,8 +124,12 @@ public class Fraction extends Number implements Cloneable {
      * @return a fraction that represents the result
      */
     public Fraction pow(int n) {
-        // TODO (X6RVMQ)
-        return null;
+        if (n < 0){
+            n *= -1;
+            return new Fraction((int) Math.pow(this.denominator, n), (int) Math.pow(this.numerator, n));
+        } else{
+            return new Fraction((int) Math.pow(this.numerator, n), (int) Math.pow(this.denominator, n));
+        }
     }
 
     /**
