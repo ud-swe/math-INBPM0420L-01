@@ -276,7 +276,14 @@ public class Fraction extends Number implements Cloneable {
     @Override
     public boolean equals(Object o) {
         // TODO (D06M5U)
-        return false;
+        if(this == o){
+            return true;
+        }
+        if(!(o instanceof Fraction)){
+            return false;
+        }
+        Fraction f = (Fraction) o;
+        return numerator == f.numerator && denominator == f.denominator;
     }
 
     /**

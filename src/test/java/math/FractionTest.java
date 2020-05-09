@@ -172,7 +172,13 @@ class FractionTest {
     @Test
     public void testEquals() {
         // TODO (D06M5U)
-        fail();
+        Fraction f = new Fraction(3,4);
+        assertTrue(f.equals(f));
+        assertTrue(f.equals(new Fraction(3,4)));
+        assertFalse(f.equals(null));
+        assertFalse(f.equals(new Fraction(6,8)));
+        assertFalse(f.equals(new Fraction(3,5)));
+        assertFalse(f.equals(new Fraction(5,4)));
     }
 
 }
