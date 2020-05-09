@@ -159,8 +159,10 @@ class FractionTest {
 
     @Test
     public void testClone() {
-        // TODO (E6D5JN)
-        fail();
+        Fraction fraction = new Fraction(1,3);
+        Fraction clone = (Fraction) fraction.clone();
+        assertEquals(3, clone.getDenominator());
+        assertEquals(1, clone.getNumerator());
     }
 
     @Test
