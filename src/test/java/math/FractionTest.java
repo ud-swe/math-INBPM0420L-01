@@ -76,8 +76,12 @@ class FractionTest {
 
     @Test
     public void testDivideFraction() {
-        // TODO (W718KE)
-        fail();
+        assertFraction(15, 8,new Fraction(3,4).divide(new Fraction(2,5)));
+        assertFraction(9, 77,new Fraction(3,7).divide(new Fraction(11,3)));
+        assertFraction(1428, 777,new Fraction(34,37).divide(new Fraction(21,42)));
+        assertFraction(48, 85,new Fraction(12,17).divide(new Fraction(5,4)));
+        ArithmeticException e = assertThrows(ArithmeticException.class, () -> new Fraction(11, 14).divide(new Fraction(0,3)));
+        assertEquals("Division by zero", e.getMessage());
     }
 
     @Test
