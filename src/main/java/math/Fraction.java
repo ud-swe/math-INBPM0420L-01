@@ -199,8 +199,7 @@ public class Fraction extends Number implements Cloneable {
      * @return the value of this fraction as an {@code int}
      */
     public int intValue() {
-        // TODO (I462V2)
-        return 0;
+        return (int)(this.numerator/this.denominator);
     }
 
     /**
@@ -229,8 +228,7 @@ public class Fraction extends Number implements Cloneable {
      * @return the value of this fraction as a {@code long}
      */
     public long longValue() {
-        // TODO (I462V2)
-        return 0;
+        return (long)(this.numerator/this.denominator);
     }
 
     /**
@@ -240,7 +238,9 @@ public class Fraction extends Number implements Cloneable {
      * otherwise
      */
     public boolean isZero() {
-        // TODO (I462V2)
+        if(this.numerator==0){
+            return true;
+        }
         return false;
     }
 

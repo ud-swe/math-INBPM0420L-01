@@ -100,8 +100,9 @@ class FractionTest {
 
     @Test
     public void testIsZero() {
-        // TODO (I462V2)
-        fail();
+        assertEquals(true,new Fraction(0,2).isZero());
+        assertEquals(false,new Fraction(2,13).isZero());
+        assertEquals(false,new Fraction(-12,1).isZero());
     }
 
     @Test
@@ -142,14 +143,25 @@ class FractionTest {
 
     @Test
     public void testIntValue() {
-        // TODO (I462V2)
-        fail();
+        assertEquals(1,new Fraction(2,2).intValue());
+        assertEquals(1,new Fraction(20,13).intValue());
+        assertEquals(12,new Fraction(12,1).intValue());
+        assertEquals(1,new Fraction(24,13).intValue());
+        assertEquals(-2,new Fraction(-15,7).intValue());
+        assertEquals(0,new Fraction(-2,5).intValue());
+        assertEquals(0,new Fraction(20,30).intValue());
+
     }
 
     @Test
     public void testLongValue() {
-        // TODO (I462V2)
-        fail();
+        assertEquals((long)1,new Fraction(2,2).longValue());
+        assertEquals((long)1,new Fraction(20,13).longValue());
+        assertEquals((long)12,new Fraction(12,1).longValue());
+        assertEquals((long)1,new Fraction(24,13).longValue());
+        assertEquals((long)-2,new Fraction(-15,7).longValue());
+        assertEquals((long)0,new Fraction(-2,5).longValue());
+        assertEquals((long)0,new Fraction(20,30).longValue());
     }
 
     @Test
@@ -174,5 +186,4 @@ class FractionTest {
         // TODO (D06M5U)
         fail();
     }
-
 }
