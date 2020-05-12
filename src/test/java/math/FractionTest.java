@@ -58,8 +58,10 @@ class FractionTest {
 
     @Test
     public void testPow() {
-        // TODO (X6RVMQ)
-        fail();
+        assertFraction(9, 4, new Fraction(3, 2).pow(2));
+        assertFraction(1, 1, new Fraction(3, 2).pow(0));
+        assertFraction(2, 3, new Fraction(3, 2).pow(-1));
+        assertFraction(-2, 3, new Fraction(-3, 2).pow(-1));
     }
 
     @Test
