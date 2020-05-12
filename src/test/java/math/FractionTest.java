@@ -94,8 +94,10 @@ class FractionTest {
 
     @Test
     public void testAbs() {
-        // TODO (J3KVK1)
-        fail();
+        assertFraction(14, 2, new Fraction(-14, 2).abs());
+        assertFraction(14, 2, new Fraction(14, -2).abs());
+        assertFraction(14, 2, new Fraction(-14,-2).abs());
+        assertFraction(14, 2, new Fraction(14, 2).abs());
     }
 
     @Test
