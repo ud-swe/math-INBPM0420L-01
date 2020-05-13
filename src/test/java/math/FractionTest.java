@@ -115,8 +115,10 @@ class FractionTest {
 
     @Test
     public void testReciprocal() {
-        // TODO (N1SBRH)
-        fail();
+        assertFraction(5, 3, new Fraction(3,5).reciprocal());
+        assertFraction(2, 5, new Fraction(5,2).reciprocal());
+        assertFraction(15, 16, new Fraction(16,15).reciprocal());
+        assertFraction(-5, 3, new Fraction(-3,5).reciprocal());
     }
 
     @Test
