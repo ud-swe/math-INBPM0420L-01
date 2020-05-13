@@ -106,7 +106,11 @@ class FractionTest {
     @Test
     public void testMultiplyFraction() {
         // TODO (QZQVTB)
-        fail();
+        assertFraction(8,35, new Fraction(2,5).multiply(new Fraction(4, 7)));
+        assertFraction(21,8, new Fraction(3,2).multiply(new Fraction(7,4)));
+        assertFraction(8,21, new Fraction(2,3).multiply(new Fraction(4,7)));
+        assertFraction(24,100, new Fraction(4,10).multiply(new Fraction(6,10)));
+        assertFraction(9,64, new Fraction(3,8).multiply(new Fraction(3,8)));
     }
 
     @Test

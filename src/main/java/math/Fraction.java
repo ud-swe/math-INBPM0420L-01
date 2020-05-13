@@ -180,7 +180,7 @@ public class Fraction extends Number implements Cloneable {
      */
     public Fraction multiply(Fraction fraction) {
         // TODO (QZQVTB)
-        return null;
+        return new Fraction(this.getNumerator()*fraction.getNumerator(),this.getDenominator()*fraction.getDenominator());
     }
 
     /**
