@@ -199,8 +199,11 @@ public class Fraction extends Number implements Cloneable {
      * @return the absolute value of this fraction
      */
     public Fraction abs() {
-        // TODO (J3KVK1)
-        return null;
+        if (this.numerator < 0) {
+            return new Fraction(this.numerator * -1, this.denominator);
+        } else {
+            return new Fraction(this.numerator, this.denominator);
+        }
     }
 
     /**
