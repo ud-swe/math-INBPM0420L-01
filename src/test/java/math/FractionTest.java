@@ -74,8 +74,8 @@ class FractionTest {
         assertFraction(5,28,new Fraction(3,7).subtract(new Fraction(1,4)));
         assertFraction(7,24,new Fraction(5,8).subtract(new Fraction(1,3)));
         assertFraction(-1,45,new Fraction(7,9).subtract(new Fraction(4,5)));
-        assertFraction(10,21,new Fraction(8,7).subtract(new Fraction(2,3)));
         assertFraction(44,115,new Fraction(18,23).subtract(new Fraction(2,5)));
+        assertFraction(4,21,new Fraction(6,21).subtract(new Fraction(2,21)));
     }
 
     @Test
